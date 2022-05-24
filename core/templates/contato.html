@@ -1,12 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Django 1 - Contato</title>
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
 </head>
 <body>
     <center>
         <h1>Contato</h1>
+        <h1>{{ aula.titulo }} </h1>
+        <h1>{{ aula.nota }} </h1>
+        <h1>{{ aula.participantes }} </h1>
+
+        <button onclick="teste();"> Clique aqui</button>
     </center>
+
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
