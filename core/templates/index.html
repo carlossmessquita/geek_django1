@@ -8,6 +8,18 @@
     <center>
         <h1>Index</h1>
         <h2>{{ comunidade }} - {{ projeto }}</h2>
+
+        {% for aula in aulas %}
+            <a href="{% url 'aula' aula.id %}">{{ aula.titulo }}</a>
+            <p>{{ aula.nota }}</p>
+            <p>{{ aula.participantes }}</p>
+        {% endfor %}
+
+        {% for aluno in alunos %}
+            <p>{{ aluno.nome }} {{ aluno.sobrenome }}</p>
+            <p>{{ aluno.email }}</p>
+        {% endfor %}
+
     </center>
 </body>
 </html>
