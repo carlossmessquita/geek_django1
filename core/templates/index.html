@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,6 +8,7 @@
 <body>
     <center>
         <h1>Index</h1>
+        <img src="{% static 'images/django.png' %}" alt="Logo Django" height="150px" width="250px">
         <h2>{{ comunidade }} - {{ projeto }}</h2>
 
         {% for aula in aulas %}
